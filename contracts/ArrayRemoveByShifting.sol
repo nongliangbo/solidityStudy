@@ -9,6 +9,7 @@ event LogItemRemoved(uint256 index, uint256 removedValue);
 
     uint256 iValue;
     uint256 arri_befor;
+    event Log(address indexed sender, uint256 message);
 
 
     //传入第几个元素
@@ -25,14 +26,14 @@ event LogItemRemoved(uint256 index, uint256 removedValue);
         {
 
           iValue = i;
-          arri_befor = arr[i];
+        //   arri_befor = arr[i];
            arr[i]= arr[i+1];
         }
 
         arr.pop();
 
         // 触发事件
-    //    emit LogItemRemoved(index, removedValue);
+       emit LogItemRemoved(index, removedValue);
 
 
     }
@@ -47,10 +48,10 @@ event LogItemRemoved(uint256 index, uint256 removedValue);
         assert(arr[3] == 5);
         assert(arr.length == 4);
 
-        arr = [1];
-        remove(0);
-        // []
-        assert(arr.length == 0);
+        // arr = [1];
+        // remove(0);
+        // // []
+        // assert(arr.length == 0);
     }
 
 

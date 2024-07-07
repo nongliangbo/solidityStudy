@@ -6,52 +6,24 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "message",
-						"type": "uint256"
-					}
-				],
-				"name": "Log",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "index",
+						"name": "balance",
 						"type": "uint256"
 					},
 					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "removedValue",
+						"name": "withdrawAmount",
 						"type": "uint256"
 					}
 				],
-				"name": "LogItemRemoved",
-				"type": "event"
+				"name": "InsufficientBalance",
+				"type": "error"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "arr",
+				"inputs": [],
+				"name": "num",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -63,23 +35,49 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "index",
-						"type": "uint256"
-					}
-				],
-				"name": "remove",
+				"inputs": [],
+				"name": "testAssert",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "test",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_withdrawAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "testCustomError",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "testRequire",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "testRevert",
+				"outputs": [],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -96,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ArrayRemoveByShifting.sol": "ArrayRemoveByShifting"
+			"contracts/Error.sol": "Error"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -110,12 +108,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ArrayRemoveByShifting.sol": {
-			"keccak256": "0x8f607e92e01033f6dfaa51f1cbc69928ad29af2e804eec561e14658cf554975d",
+		"contracts/Error.sol": {
+			"keccak256": "0x31e666070437ffe689fa96026495eef4b2c6f8523a96e853cf139bcc8b7b2d18",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://972998fa319b279cb5bf7d5a95b4a1aa9019dbc95cff4ef650185b861d1ec34d",
-				"dweb:/ipfs/QmdXsR8nw3qnWdrFfW6p3KThggy6ehw21Sbr1S6YQoDDsy"
+				"bzz-raw://53cc78313474a0241aae9b3bd3e8bb836bfb8dd616cb4d1fba50f232073d307a",
+				"dweb:/ipfs/QmQT3p9BuL8oGheKMddRJpMb4ukDeaRWPfRPNohmyxo8nw"
 			]
 		}
 	},
