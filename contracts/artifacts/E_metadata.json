@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EtherUnits.sol": "E"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EtherUnits.sol": {
+			"keccak256": "0x2b4e16b0c7c715ba6470c98282c750aef54e840d8d673855e8259d1b03d3e75b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b27c7a466161719661a30faed5d6abc0eca7c555b7fac8cbba3ef3a1000e4aa7",
+				"dweb:/ipfs/QmSB3AdbBFwxTMk1DHb9MveaqyF8arbdc4avjUCRtm3saq"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ArrayRemoveByShifting.sol": "Name"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ArrayRemoveByShifting.sol": {
+			"keccak256": "0x606b35b2b25215d68f9186c4e62abab35f3f0d3406670ebd5ccbb6144e6b9275",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f9fb3d9c9c686e63aab9e92fbed69c019586262d45ba109a1ad6ab0524313919",
+				"dweb:/ipfs/QmXct3f9Hi2KKPMvVf3f4imJMk1wtx61pExeEn1Da11Xx9"
+			]
+		}
+	},
+	"version": 1
+}
